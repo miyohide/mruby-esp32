@@ -60,5 +60,7 @@ MRuby::CrossBuild.new('esp32') do |conf|
   conf.gem :core => "mruby-print"
   conf.gem :core => "mruby-compiler"
   conf.gem :path => "../mruby-esp32-system"
-  conf.gem :path => "../mruby-esp32-wifi"
+  #conf.gem :path => "../mruby-esp32-wifi"
+  conf.gem :core => "mruby-toplevel-ext"
+  conf.gem :github => 'miyohide/mruby-esp32-gps'
 end
